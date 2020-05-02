@@ -1,0 +1,43 @@
+Arguments: 
+  /home/spec/.nvm/versions/node/v11.12.0/bin/node /usr/local/bin/yarn
+
+PATH: 
+  /home/spec/.nvm/versions/node/v11.12.0/bin:/mnt/ECEABE2DEABDF3C4/usr/bin:/home/spec/bin:/home/spec/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin:/usr/local/go/bin:/usr/local/go/bin:/snap/bin:/var/lib/snapd/snap/bin:/mnt/ECEABE2DEABDF3C4/flutter/bin
+
+Yarn version: 
+  1.21.1
+
+Node version: 
+  11.12.0
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/spec/learn/fs/voting_app/node_modules/morgan/node_modules'
+
+npm manifest: 
+  {
+    "name": "voting_app",
+    "version": "1.1.0",
+    "author": "Fullstack.io",
+    "scripts": {
+      "go": "open http://localhost:3000; npm run server",
+      "e2e": "nightwatch --config nightwatch.js",
+      "run-e2e": "concurrently -s first -k \"npm start\" \"sleep 15; npm run e2e\"",
+      "test": "./node_modules/.bin/concurrently -k 'npm run server' 'npm run e2e'",
+      "start": "npm run server",
+      "server": "live-server public --host=localhost --port=3000 --middleware=./disable-browser-cache.js"
+    },
+    "private": true,
+    "devDependencies": {
+      "@fullstackio/live-server": "1.2.2",
+      "concurrently": "^5.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
