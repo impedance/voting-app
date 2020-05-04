@@ -13,6 +13,7 @@
   "private": true,
   "devDependencies": {
     "@fullstackio/live-server": "1.2.2",
+    "babel-eslint": "^10.1.0",
     "concurrently": "^5.0.2"
   }
 }
